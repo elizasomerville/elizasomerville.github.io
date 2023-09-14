@@ -1,31 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html data-bs-theme="auto" lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Eliza Somerville</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="px-4 py-5 my-5 text-center">
-      <!img class="d-block mx-auto mb-4" src="logo.svg" alt="" width="72" height="57">
-      <h1 class="display-5 fw-bold text-body-emphasis">Eliza Somerville</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Final-year Theoretical Physics student at Trinity College Dublin</p>
-      </div>
-    </div>
-    <div class="container my-5">
-        <hr class="col-1 my-4">
-        <h4>DIAS Summer Studentship 2023</h4>
+    <meta name="description" content="Final-year Theoretical Physics student at Trinity College Dublin">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Eliza Somerville",
+            "url": "https://elizasomerville.github.io"
+        }
+    </script>
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="py-4 py-xl-5">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-xl-8 offset-md-4 text-center justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
+                    <div class="text-center"></div>
+                </div>
+                <div class="w-100"></div>
+            </div>
+        </div>
+        <h1 class="display-4 fw-bold text-center justify-content-lg-center align-items-lg-center mb-1">Eliza Somerville</h1>
+        <h5 class="fw-normal text-center text-muted mb-1">Final-year Theoretical Physics student at Trinity College Dublin</h5>
+    </section>
+    <div class="container text-start">
+        <div class="card" style="margin-bottom: 1em;">
+            <div class="card-body">
+                <h4 class="card-title">Summer Studentship</h4>
+                <h6 class="text-muted card-subtitle mb-2">Dublin Institute for Advanced Studies</h6>
+                <ul>
+                    <li>In June and July 2023, I undertook a summer studentship at the&nbsp;<a class="text-decoration-none" href="https://dias.ie">Dublin Institute for Advanced Studies</a>, which consisted of a group project in collaboration with three other students.</li>
+                    <li>My group's project was supervised by Dr. Aradhita Chattopadhyaya, and was based on the computation of black hole entropy via microstate counting of systems of 1/4 BPS dyons in type IIB string theory.</li>
+                </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
+                <p class="text-body-secondary" style="border-radius: 5px;">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Redistricting_Ireland_Report.pdf"></a><a class="text-decoration-none" href="https://elizasomerville.github.io/DIAS_Report.pdf">Black Hole Entropy in String Theory</a></p>
+                <p class="text-body-secondary">Presentation slides:&nbsp;<a class="text-decoration-none" href="https://github.com/elizasomerville/IrishConstituencyOptimisation"></a><a class="text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf">Modularity of Black Holes and Ramanujan's Tau Function</a></p>
+            </div>
+        </div>
         <p></p>
-        <p>Report: <a href="https://elizasomerville.github.io/DIAS_Report.pdf" class="text-decoration-none">Black Hole Entropy in String Theory</a></p>
-        <p>Presentation slides: <a href="https://elizasomerville.github.io/DIAS_Presentation.pdf" class="text-decoration-none">Modularity of Black Holes and Ramanujan's Tau Function</a></p>
-        <hr class="col-1 my-4">
-        <h4>Optimisation of Irish Constituency Boundaries</h4>
-        <p></p>
-        <p>Report: <a href="https://elizasomerville.github.io/Redistricting_Ireland_Report.pdf" class="text-decoration-none">Multi-Objective Optimisation Applied to the Electoral Redistricting of Ireland</a></p>
-        GitHub repository: <a href="https://github.com/elizasomerville/IrishConstituencyOptimisation" class="text-decoration-none">IrishConstituencyOptimisation</a></p>
-      </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Real-World Mathematical Modelling Event</h4>
+                <h6 class="text-muted card-subtitle mb-2">Trinity College Dublin</h6>
+                <ul>
+                    <li>In May 2023, I participated in a three-day Mathematical Modelling Hackathon in Trinity College Dublin, in a group with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>, Ben McGloin and Mikey Whelan.</li>
+                    <li>We developed an evolutionary algorithm in Python designed to optimise the constituency boundaries of Ireland according to the criteria outlined in the Irish Constitution.</li>
+                </ul>
+                <p class="text-body-secondary">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Redistricting_Ireland_Report.pdf">Multi-Objective Optimisation Applied to the Electoral Redistricting of Ireland</a></p>
+                <p class="text-body-secondary">GitHub repository:&nbsp;<a class="text-decoration-none" href="https://github.com/elizasomerville/IrishConstituencyOptimisation">IrishConstituencyOptimisation</a></p>
+            </div>
+        </div>
     </div>
-  </body>
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a href="https://github.com/elizasomerville"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github text-muted" style="width: 30px;height: 30px;">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg></a></li>
+            </ul>
+            <p class="mb-0" style="font-weight: initial;">© 2023 Eliza Somerville</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
