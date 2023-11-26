@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="auto" lang="en">
+<html data-bs-theme="light" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,87 +16,6 @@
             "url": "https://elizasomerville.github.io"
         }
     </script>
-    <script>
-        (function() {
-
-            // JavaScript snippet handling Dark/Light mode switching
-
-            const getStoredTheme = () => localStorage.getItem('theme');
-            const setStoredTheme = theme => localStorage.setItem('theme', theme);
-            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
-
-            const getPreferredTheme = () => {
-
-                if (forcedTheme) return forcedTheme;
-
-                const storedTheme = getStoredTheme();
-                if (storedTheme) {
-                    return storedTheme;
-                }
-
-                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
-
-                if (pageTheme) {
-                    return pageTheme;
-                }
-
-                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            }
-
-            const setTheme = theme => {
-                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.documentElement.setAttribute('data-bs-theme', 'dark');
-                } else {
-                    document.documentElement.setAttribute('data-bs-theme', theme);
-                }
-            }
-
-            setTheme(getPreferredTheme());
-
-            const showActiveTheme = (theme, focus = false) => {
-                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
-
-                if (!themeSwitchers.length) return;
-
-                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-                    element.classList.remove('active');
-                    element.setAttribute('aria-pressed', 'false');
-                });
-
-                for (const themeSwitcher of themeSwitchers) {
-
-                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
-
-                    if (btnToActivate) {
-                        btnToActivate.classList.add('active');
-                        btnToActivate.setAttribute('aria-pressed', 'true');
-                    }
-                }
-            }
-
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-                const storedTheme = getStoredTheme();
-                if (storedTheme !== 'light' && storedTheme !== 'dark') {
-                    setTheme(getPreferredTheme());
-                }
-            });
-
-            window.addEventListener('DOMContentLoaded', () => {
-                showActiveTheme(getPreferredTheme());
-
-                document.querySelectorAll('[data-bs-theme-value]')
-                    .forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            const theme = toggle.getAttribute('data-bs-theme-value');
-                            setStoredTheme(theme);
-                            setTheme(theme);
-                            showActiveTheme(theme);
-                        })
-                    })
-            });
-        })();
-    </script>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/iOS%20Home%20Screen%20Favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Favicon.png" media="(prefers-color-scheme: dark)">
@@ -110,31 +29,9 @@
 </head>
 
 <body>
-    <section class="py-4 py-xl-5">
-        <div class="container text-end">
-            <div class="theme-switcher dropdown"><button class="btn btn-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: var(--bs-body-color);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
-                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-                    </svg></button>
-                <div class="dropdown-menu"><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
-                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-                        </svg>Light</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-moon-stars-fill opacity-50 me-2">
-                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
-                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
-                        </svg>Dark</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
-                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-                        </svg>Auto</a></div>
-            </div>
-        </div>
-        <div class="container h-100">
-            <div class="row justify-content-center align-items-center h-100">
-                <div class="col-md-9 col-xl-8 offset-md-4 text-center justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-                    <div class="text-center"></div>
-                </div>
-                <div class="w-100"></div>
-            </div>
-        </div>
+    <section class="py-4 py-xl-5" style="--bs-body-bg: #fff;">
         <h1 class="display-4 fw-bold text-center justify-content-lg-center align-items-lg-center mb-1">Eliza Somerville</h1>
-        <h5 class="fw-normal text-center text-muted mb-1">Final-year Theoretical Physics student at Trinity College Dublin</h5>
+        <h5 class="fw-normal text-center text-muted mb-1" style="padding: 0;padding-right: 15px;padding-left: 15px;">Final-year Theoretical Physics student at Trinity College Dublin</h5>
     </section>
     <div class="container text-start">
         <div class="card" style="margin-bottom: 1em;">
@@ -145,12 +42,15 @@
                     <li>In June and July 2023, I undertook a summer studentship in the School of Theoretical Physics at the&nbsp;<a class="text-decoration-none" href="https://dias.ie">Dublin Institute for Advanced Studies</a>, which consisted of a group project in collaboration with three other students.</li>
                     <li>My group's project was supervised by Dr. Aradhita Chattopadhyaya, and was based on the computation of black hole entropy via microstate counting of systems of 1/4 BPS dyons in type IIB string theory.</li>
                 </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
-                <p class="text-body-secondary" style="border-radius: 5px;">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Redistricting_Ireland_Report.pdf"></a><a class="text-decoration-none" href="https://elizasomerville.github.io/DIAS_Report.pdf">Black Hole Entropy in String Theory</a></p>
-                <p class="text-body-secondary">Presentation slides:&nbsp;<a class="text-decoration-none" href="https://github.com/elizasomerville/IrishConstituencyOptimisation"></a><a class="text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf">Modularity of Black Holes and Ramanujan's Tau Function</a></p>
+                <p class="text-body-secondary d-grid d-print-block d-sm-grid d-md-block d-lg-block d-xl-block d-xxl-block" style="border-radius: 5px;">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Redistricting_Ireland_Report.pdf"></a><a class="text-decoration-none" href="https://elizasomerville.github.io/Files/DIAS_Report.pdf">Black Hole Entropy in String Theory</a></p>
+                <p class="text-body-secondary d-grid d-print-block d-sm-grid d-md-block d-lg-block d-xl-block d-xxl-block">Presentation slides:&nbsp;<a class="text-decoration-none" href="https://github.com/elizasomerville/IrishConstituencyOptimisation"></a><a class="text-decoration-none" href="https://elizasomerville.github.io/Files/DIAS_Presentation.pdf">Modularity of Black Holes and Ramanujan's Tau Function</a></p>
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-between photos" data-bss-baguettebox="" style="padding-top: 10px;">
+                    <div class="col flex-fill item"><img class="img-fluid" src="assets/img/a_plot.jpg" alt="Plot of modular form A"></div>
+                    <div class="col flex-fill item"><img class="img-fluid" src="assets/img/b_plot.jpg" alt="Plot of modular form B"></div>
+                </div><small class="d-lg-flex justify-content-lg-end"><em>Plotted using the Python package&nbsp;</em><a class="text-decoration-none" href="https://pypi.org/project/cplot/"><em>cplot</em></a><em>.&nbsp;</em></small>
             </div>
         </div>
-        <p></p>
-        <div class="card">
+        <div class="card" style="margin: 0px 0px 16px;">
             <div class="card-body">
                 <h4 class="card-title">Real-World Mathematical Modelling Event</h4>
                 <h6 class="text-muted card-subtitle mb-2">Trinity College Dublin</h6>
@@ -158,8 +58,29 @@
                     <li>In May 2023, I participated in a three-day Mathematical Modelling Hackathon in Trinity College Dublin, in a group with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>, Ben McGloin and Mikey Whelan.</li>
                     <li>We developed an evolutionary algorithm in Python designed to optimise the constituency boundaries of Ireland according to the criteria outlined in the Irish Constitution.</li>
                 </ul>
-                <p class="text-body-secondary">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Redistricting_Ireland_Report.pdf">Multi-Objective Optimisation Applied to the Electoral Redistricting of Ireland</a></p>
-                <p class="text-body-secondary">GitHub repository:&nbsp;<a class="text-decoration-none" href="https://github.com/elizasomerville/IrishConstituencyOptimisation">IrishConstituencyOptimisation</a></p>
+                <p class="text-body-secondary d-grid d-print-block d-sm-grid d-md-block d-lg-block d-xl-block d-xxl-block">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Files/Redistricting_Ireland_Report.pdf">Multi-Objective Optimisation Applied to the Electoral Redistricting of Ireland</a></p>
+                <p class="text-body-secondary d-grid d-print-block d-sm-grid d-md-block d-lg-block d-xl-block d-xxl-block">GitHub repository:&nbsp;<a class="text-decoration-none" href="https://github.com/elizasomerville/IrishConstituencyOptimisation">IrishConstituencyOptimisation</a></p>
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-evenly align-items-center photos" data-bss-baguettebox="">
+                    <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/f_cb.png" alt="3D plot of reward function"></div>
+                    <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/graph.png" alt="Graphical representation of electoral districts"></div>
+                    <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/current_configuration_county_boundaries.webp" alt="Map of Ireland coloured by constituency, overlaid with county boundaries"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Study of Soliton Dynamics</h4>
+                <h6 class="text-muted card-subtitle mb-2">Independent Project</h6>
+                <ul>
+                    <li>&nbsp;A project in collaboration with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>.</li>
+                    <li>We generated animations of soliton dynamics in Mathematica, and produced an accompanying report outlining the basic theory of solitons in one spatial dimension.</li>
+                </ul>
+                <p class="text-body-secondary d-grid d-print-inline-block d-sm-grid d-md-inline-block d-lg-inline-block d-xl-inline-block d-xxl-inline-block">Report:&nbsp;<a class="text-decoration-none" href="https://elizasomerville.github.io/Files/Solitons_Report.pdf">Solitons in 1+1 Dimensions</a></p>
+                <p class="text-body-secondary d-grid d-print-block d-sm-grid d-md-block d-lg-block d-xl-block d-xxl-block" style="padding-bottom: 10px;">Webpage:&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io/Solitons/">Solitons in 1+1 Dimensions</a></p>
+                <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-between photos" data-bss-baguettebox="" style="padding-top: 10px;">
+                    <div class="col flex-fill item"><img class="img-fluid" src="assets/img/breather.gif" alt="The doublet or breather mode"></div>
+                    <div class="col flex-fill item"><img class="img-fluid" src="assets/img/two_solitons.gif" alt="The interaction of two solitons"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -170,7 +91,6 @@
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
                         </svg></a></li>
             </ul>
-            <p class="mb-0" style="font-weight: initial;">© 2023 Eliza Somerville</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
