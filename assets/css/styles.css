@@ -2,3 +2,27 @@
   max-width: 900px;
 }
 
+.nav-link {
+  color: var(--bs-light);
+  opacity: 0.8;
+}
+
+.nav-link:hover {
+  color: var(--bs-light);
+  opacity: 1;
+}
+
+h1 {
+  background: linear-gradient(90deg, var(--bs-purple), var(--bs-cyan),var(--bs-purple));
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 10s linear infinite;
+}
+
+@keyframes animatedTextGradient {
+  to {
+    background-position: 200% center;
+  }
+}
+

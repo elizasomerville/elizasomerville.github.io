@@ -33,215 +33,231 @@
     <link rel="icon" type="image/png" sizes="180x180" href="assets/img/FaviconWithBackground180px.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/FaviconWithBackground192px.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic-icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="icon" sizes="48x48" href="assets/img/Favicon48px.png">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body class="d-flex flex-column vh-100">
-    <section class="py-4 py-xl-5" style="--bs-body-bg: #fff;padding-right: 19px;padding-left: 19px;">
+    <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar gradient navbar-dark" data-bs-target="#cv-link" data-bs-spy="scroll" style="background: linear-gradient(90deg, var(--bs-purple), var(--bs-info));">
+        <div class="container"><a class="navbar-brand logo" href="#">Eliza Somerville</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nav-id">
+                    <li class="nav-item" data-bs-target="#cv"><a class="nav-link" href="#cv">CV</a></li>
+                    <li class="nav-item" data-bs-target="#projects"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="py-4 py-xl-5" style="--bs-body-bg: #fff;padding-right: 19px;padding-left: 19px;margin-bottom: -50px;">
         <h1 class="display-4 fw-bold text-center justify-content-lg-center align-items-lg-center mb-1">Eliza Somerville</h1>
-        <h5 class="fw-normal text-center text-muted mb-1" style="margin-bottom: 4px;">MASt in Mathematics student at the University of Cambridge</h5>
+        <h5 class="fw-normal text-center text-black-50 mb-1" style="margin-bottom: 4px;">MASt in Mathematics student at the University of Cambridge</h5>
     </section>
-    <main class="flex-fill">
-        <div class="container text-start">
-            <h3 class="fw-bold text-start text-dark" style="margin-bottom: -10px;">Curriculum Vitae</h3>
-            <hr style="margin-top: 12px;margin-bottom: 14px;">
-            <p class="fw-normal"><strong>2024–2025:</strong> MASt in Mathematics, University of Cambridge (St John's College)</p>
-            <p class="fw-normal"><strong>2020–2024: </strong>BA in Theoretical Physics, Trinity College Dublin</p>
-            <h3 class="fw-bold text-start text-dark" style="margin-bottom: -10px;margin-top: 25px;">Projects</h3>
-            <hr style="margin-bottom: 10px;margin-top: 15px;">
-            <div class="card" style="margin-bottom: 1em;">
-                <div class="card-body">
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-auto d-grid align-self-end">
-                            <h4 class="d-grid">Asymptotic Decomposition of a Scalar Field in de Sitter Space</h4>
+    <main class="flex-fill" data-bs-target="#nav-id">
+        <div class="container text-start" data-bs-target="#nav-id">
+            <div id="cv" style="margin-bottom: 0px;padding-top: 60px;">
+                <h3 class="fw-bold text-start text-dark" style="margin-bottom: -10px;">Curriculum Vitae</h3>
+                <hr style="margin-top: 12px;margin-bottom: 14px;">
+                <p class="fw-normal"><strong>2024–2025:</strong> MASt in Mathematics, University of Cambridge (St John's College)</p>
+                <p class="fw-normal"><strong>2020–2024: </strong>BA in Theoretical Physics, Trinity College Dublin</p>
+            </div>
+            <div id="projects" style="padding-top: 60px;margin-top: -28px;">
+                <h3 class="fw-bold text-start text-dark" style="margin-bottom: -10px;">Projects</h3>
+                <hr style="margin-bottom: 10px;margin-top: 15px;">
+                <div class="card" data-aos="fade-up" style="margin-bottom: 1em;">
+                    <div class="card-body">
+                        <div class="row g-0 justify-content-between">
+                            <div class="col-auto d-grid align-self-end">
+                                <h4 class="d-grid">Asymptotic Decomposition of a Scalar Field in de Sitter Space</h4>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Jul–Aug 2024</h5>
+                            </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Jul–Aug 2024</h5>
+                        <p></p>
+                        <h6 class="text-muted card-subtitle mb-2">Philippa Fawcett Internship | University of Cambridge</h6>
+                        <ul>
+                            <li>In July and August 2024, I undertook a two-month research project in the Department of Pure Mathematics and Mathematical Statistics at the University of Cambridge, funded by the Philippa Fawcett Internship Programme.</li>
+                            <li>My group's project was supervised by Dr Grigalius Taujanskas, and involved investigating the asymptotic decomposition of a charged scalar field in de Sitter space.&nbsp;</li>
+                        </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
+                        <div class="row gx-3 gy-0 row-cols-sm-3 row-cols-md-3 row-cols-xl-3 justify-content-center align-items-center photos" data-bss-baguettebox="" style="padding-top: 15px;margin-bottom: 10px;margin-top: -10px;">
+                            <div class="col flex-fill align-content-center item"><img class="img-fluid justify-content-xl-center align-items-xl-center d-none d-sm-block" src="assets/img/de-sitter.svg" alt="Closed slicing of de Sitter space" width="341" height="334" style="padding: 5px;padding-top: 0px;padding-right: 25px;padding-bottom: 0px;padding-left: 25px;"></div>
+                            <div class="col flex-fill align-content-center item"><img class="img-fluid d-none d-sm-block" src="assets/img/energy-estimate.svg" alt="Compactified de Sitter space on the Einstein cylinder" width="341" height="334" style="padding: 8px;padding-right: 14px;"></div>
+                            <div class="col d-grid justify-content-center item"><img class="img-fluid" src="assets/img/penrose.svg" alt="Penrose diagram of de Sitter space" width="348" height="342" style="padding: 6px;padding-right: 14px;"></div>
                         </div>
-                    </div>
-                    <p></p>
-                    <h6 class="text-muted card-subtitle mb-2">Philippa Fawcett Internship | University of Cambridge</h6>
-                    <ul>
-                        <li>In July and August 2024, I undertook a two-month research project in the Department of Pure Mathematics and Mathematical Statistics at the University of Cambridge, funded by the Philippa Fawcett Internship Programme.</li>
-                        <li>My group's project was supervised by Dr Grigalius Taujanskas, and involved investigating the asymptotic decomposition of a charged scalar field in de Sitter space.&nbsp;</li>
-                    </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
-                    <div class="row gx-3 gy-0 row-cols-sm-3 row-cols-md-3 row-cols-xl-3 justify-content-center align-items-center photos" data-bss-baguettebox="" style="padding-top: 15px;margin-bottom: 10px;margin-top: -10px;">
-                        <div class="col flex-fill align-content-center item"><img class="img-fluid justify-content-xl-center align-items-xl-center d-none d-sm-block" src="assets/img/de-sitter.svg" alt="Closed slicing of de Sitter space" width="341" height="334" style="padding: 5px;padding-top: 0px;padding-right: 25px;padding-bottom: 0px;padding-left: 25px;"></div>
-                        <div class="col flex-fill align-content-center item"><img class="img-fluid d-none d-sm-block" src="assets/img/energy-estimate.svg" alt="Compactified de Sitter space on the Einstein cylinder" width="341" height="334" style="padding: 8px;padding-right: 14px;"></div>
-                        <div class="col d-grid justify-content-center item"><img class="img-fluid" src="assets/img/penrose.svg" alt="Penrose diagram of de Sitter space" width="348" height="342" style="padding: 6px;padding-right: 14px;"></div>
-                    </div>
-                    <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/De_Sitter_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
-                                </svg>Report</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/De_Sitter_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
-                                    <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
-                                    <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
-                                </svg>Presentation</a></div>
+                        <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/De_Sitter_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
+                                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
+                                    </svg>Report</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/De_Sitter_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
+                                        <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
+                                        <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
+                                    </svg>Presentation</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" style="margin-bottom: 1em;">
-                <div class="card-body">
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-auto d-grid align-self-end">
-                            <h4 class="d-grid">The Symbol Alphabet of One-Loop Feynman Integrals</h4>
+                <div class="card" data-aos="fade-up" style="margin-bottom: 1em;">
+                    <div class="card-body">
+                        <div class="row g-0 justify-content-between">
+                            <div class="col-auto d-grid align-self-end">
+                                <h4 class="d-grid">The Symbol Alphabet of One-Loop Feynman Integrals</h4>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">May–Jun 2024</h5>
+                            </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">May–Jun 2024</h5>
+                        <h6 class="text-muted card-subtitle mb-2">Hamilton Trust Internship | Trinity College Dublin</h6>
+                        <ul>
+                            <li>In May and June 2024, I participated in the Hamilton Trust Summer Mathematics Research Internship at Trinity College Dublin, in a group with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>&nbsp;and Mikey Whelan.</li>
+                            <li>Our project was supervised by Prof. Ruth Britto, and involved a study of the symbol alphabet of one-loop Feynman integrals in quantum field theory.</li>
+                        </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
+                        <div class="row gx-2 gy-2 row-cols-2 row-cols-sm-4 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4 justify-content-between photos" data-bss-baguettebox="" style="padding-top: 0px;margin-bottom: 10px;margin-top: -20px;">
+                            <div class="col-4 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 offset-0 d-flex flex-fill justify-content-center align-items-center align-content-center align-self-center d-flex p-3"><img class="img-fluid flex-fill" src="assets/img/tadpole.svg" alt="Tadpole (one-point) Feynman diagram" width="145" height="110" style="padding-right: 0px;padding-left: 0px;"></div>
+                            <div class="col-5 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-fill justify-content-center align-self-center"><img class="img-fluid flex-fill" src="assets/img/bubble.svg" alt="Bubble (two-point) Feynman diagram" style="padding-left: 25px;padding-right: 25px;"></div>
+                            <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-fill justify-content-center align-self-center" style="padding: 11px;"><img class="img-fluid flex-fill" src="assets/img/triangle.svg" alt="Triange (three-point) Feynman diagram" style="padding-right: 25px;padding-left: 25px;"></div>
+                            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center align-self-center"><img class="img-fluid flex-fill" src="assets/img/box.svg" alt="Box (four-point) Feynman diagram" style="padding-right: 25px;padding-left: 25px;"></div>
                         </div>
-                    </div>
-                    <h6 class="text-muted card-subtitle mb-2">Hamilton Trust Internship | Trinity College Dublin</h6>
-                    <ul>
-                        <li>In May and June 2024, I participated in the Hamilton Trust Summer Mathematics Research Internship at Trinity College Dublin, in a group with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>&nbsp;and Mikey Whelan.</li>
-                        <li>Our project was supervised by Prof. Ruth Britto, and involved a study of the symbol alphabet of one-loop Feynman integrals in quantum field theory.</li>
-                    </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
-                    <div class="row gx-2 gy-2 row-cols-2 row-cols-sm-4 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4 justify-content-between photos" data-bss-baguettebox="" style="padding-top: 0px;margin-bottom: 10px;margin-top: -20px;">
-                        <div class="col-4 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 offset-0 d-flex flex-fill justify-content-center align-items-center align-content-center align-self-center d-flex p-3"><img class="img-fluid flex-fill" src="assets/img/tadpole.svg" alt="Tadpole (one-point) Feynman diagram" width="145" height="110" style="padding-right: 0px;padding-left: 0px;"></div>
-                        <div class="col-5 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-fill justify-content-center align-self-center"><img class="img-fluid flex-fill" src="assets/img/bubble.svg" alt="Bubble (two-point) Feynman diagram" style="padding-left: 25px;padding-right: 25px;"></div>
-                        <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-fill justify-content-center align-self-center" style="padding: 11px;"><img class="img-fluid flex-fill" src="assets/img/triangle.svg" alt="Triange (three-point) Feynman diagram" style="padding-right: 25px;padding-left: 25px;"></div>
-                        <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center align-self-center"><img class="img-fluid flex-fill" src="assets/img/box.svg" alt="Box (four-point) Feynman diagram" style="padding-right: 25px;padding-left: 25px;"></div>
-                    </div>
-                    <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Symbols_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
-                                </svg>Report</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Symbols_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
-                                    <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
-                                    <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
-                                </svg>Presentation</a></div>
+                        <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Symbols_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
+                                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
+                                    </svg>Report</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Symbols_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
+                                        <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
+                                        <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
+                                    </svg>Presentation</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" style="margin-bottom: 1em;">
-                <div class="card-body">
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-auto d-grid align-self-end">
-                            <h4 class="d-grid">Coalgebra for Feynman Integrals</h4>
+                <div class="card" data-aos="fade-up" style="margin-bottom: 1em;">
+                    <div class="card-body">
+                        <div class="row g-0 justify-content-between">
+                            <div class="col-auto d-grid align-self-end">
+                                <h4 class="d-grid">Coalgebra for Feynman Integrals</h4>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Sep 2023–Apr 2024</h5>
+                            </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Sep 2023–Apr 2024</h5>
+                        <h6 class="text-muted card-subtitle mb-2">Capstone Project | Trinity College Dublin</h6>
+                        <ul>
+                            <li>During the 2023–2024 academic year, I completed my capstone project at Trinity College Dublin under the supervision of Prof. Ruth Britto.</li>
+                            <li>My project was on the coalgebra structure of Feynman integrals, with a particular focus on the diagrammatic coaction.</li>
+                        </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
+                        <div class="row gx-0 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 justify-content-center align-items-center photos" data-bss-baguettebox="" style="padding-top: 0px;margin-top: -10px;">
+                            <div class="col-auto col-sm-4 col-md-4 col-lg-auto col-xl-auto col-xxl-auto d-flex justify-content-center align-self-center d-none d-sm-flex"><img class="img-fluid justify-content-center" src="assets/img/graphical-functions.svg" style="margin-left: -10px;margin-right: -10px;padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;" width="360" height="248" alt="Permutation of external vertices in graphical function"></div>
+                            <div class="col-auto col-sm-6 col-md-6 col-lg-auto col-xl-auto col-xxl-auto d-flex justify-content-center align-self-center"><img class="img-fluid justify-content-center" src="assets/img/ladder-cuts.svg" height="254" width="502" style="padding: 5px;padding-right: 10px;" alt="Cuts of two-loop three-point ladder Feynman diagram relevant to diagrammatic coaction"></div>
                         </div>
-                    </div>
-                    <h6 class="text-muted card-subtitle mb-2">Capstone Project | Trinity College Dublin</h6>
-                    <ul>
-                        <li>During the 2023–2024 academic year, I completed my capstone project at Trinity College Dublin under the supervision of Prof. Ruth Britto.</li>
-                        <li>My project was on the coalgebra structure of Feynman integrals, with a particular focus on the diagrammatic coaction.</li>
-                    </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
-                    <div class="row gx-0 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 justify-content-center align-items-center photos" data-bss-baguettebox="" style="padding-top: 0px;margin-top: -10px;">
-                        <div class="col-auto col-sm-4 col-md-4 col-lg-auto col-xl-auto col-xxl-auto d-flex justify-content-center align-self-center d-none d-sm-flex"><img class="img-fluid justify-content-center" src="assets/img/graphical-functions.svg" style="margin-left: -10px;margin-right: -10px;padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;" width="360" height="248" alt="Permutation of external vertices in graphical function"></div>
-                        <div class="col-auto col-sm-6 col-md-6 col-lg-auto col-xl-auto col-xxl-auto d-flex justify-content-center align-self-center"><img class="img-fluid justify-content-center" src="assets/img/ladder-cuts.svg" height="254" width="502" style="padding: 5px;padding-right: 10px;" alt="Cuts of two-loop three-point ladder Feynman diagram relevant to diagrammatic coaction"></div>
-                    </div>
-                    <div class="row gy-1 row-cols-1 row-cols-md-3 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Capstone_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
-                                </svg>Report</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Capstone_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
-                                    <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
-                                    <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
-                                </svg>Presentation</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Capstone_Poster.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark" style="margin-right: 4px;">
-                                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"></path>
-                                </svg>Poster</a></div>
+                        <div class="row gy-1 row-cols-1 row-cols-md-3 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Capstone_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
+                                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
+                                    </svg>Report</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Capstone_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
+                                        <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
+                                        <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
+                                    </svg>Presentation</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Capstone_Poster.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark" style="margin-right: 4px;">
+                                        <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"></path>
+                                    </svg>Poster</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" style="margin-bottom: 1em;">
-                <div class="card-body">
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-auto d-grid align-self-end">
-                            <h4 class="d-grid">Black Hole Entropy in String Theory</h4>
+                <div class="card" data-aos="fade-up" style="margin-bottom: 1em;">
+                    <div class="card-body">
+                        <div class="row g-0 justify-content-between">
+                            <div class="col-auto d-grid align-self-end">
+                                <h4 class="d-grid">Black Hole Entropy in String Theory</h4>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Jun–Jul 2023</h5>
+                            </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Jun–Jul 2023</h5>
+                        <h6 class="text-muted card-subtitle mb-2">Summer Studentship | Dublin Institute for Advanced Studies</h6>
+                        <ul>
+                            <li>In June and July 2023, I undertook a summer studentship in the School of Theoretical Physics at the&nbsp;<a class="text-decoration-none" href="https://dias.ie">Dublin Institute for Advanced Studies</a>, which consisted of a group project in collaboration with three other students.</li>
+                            <li>My group's project was supervised by Dr Aradhita Chattopadhyaya, and was based on the computation of black hole entropy via microstate counting of systems of 1/4 BPS dyons in type IIB string theory.</li>
+                        </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
+                        <div class="row gx-2 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 justify-content-between photos" data-bss-baguettebox="">
+                            <div class="col flex-fill item"><img class="img-fluid" src="assets/img/a_plot.jpg" alt="Plot of modular form A"></div>
+                            <div class="col flex-fill item"><img class="img-fluid" src="assets/img/b_plot.jpg" alt="Plot of modular form B"></div>
                         </div>
-                    </div>
-                    <h6 class="text-muted card-subtitle mb-2">Summer Studentship | Dublin Institute for Advanced Studies</h6>
-                    <ul>
-                        <li>In June and July 2023, I undertook a summer studentship in the School of Theoretical Physics at the&nbsp;<a class="text-decoration-none" href="https://dias.ie">Dublin Institute for Advanced Studies</a>, which consisted of a group project in collaboration with three other students.</li>
-                        <li>My group's project was supervised by Dr Aradhita Chattopadhyaya, and was based on the computation of black hole entropy via microstate counting of systems of 1/4 BPS dyons in type IIB string theory.</li>
-                    </ul><a class="card-link text-decoration-none" href="https://elizasomerville.github.io/DIAS_Presentation.pdf"></a>
-                    <div class="row gx-2 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 justify-content-between photos" data-bss-baguettebox="">
-                        <div class="col flex-fill item"><img class="img-fluid" src="assets/img/a_plot.jpg" alt="Plot of modular form A"></div>
-                        <div class="col flex-fill item"><img class="img-fluid" src="assets/img/b_plot.jpg" alt="Plot of modular form B"></div>
-                    </div>
-                    <p class="fw-normal text-secondary lh-sm d-lg-flex justify-content-lg-end" style="font-size: 12px;padding-bottom: 5px;"><em>Plotted using the Python package&nbsp;</em><a class="text-decoration-none" href="https://pypi.org/project/cplot/"><em>cplot</em></a><em>.</em></p>
-                    <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/DIAS_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
-                                </svg>Report</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/DIAS_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
-                                    <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
-                                    <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
-                                </svg>Presentation</a></div>
+                        <p class="fw-normal text-secondary lh-sm d-lg-flex justify-content-lg-end" style="font-size: 12px;padding-bottom: 5px;"><em>Plotted using the Python package&nbsp;</em><a class="text-decoration-none" href="https://pypi.org/project/cplot/"><em>cplot</em></a><em>.</em></p>
+                        <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/DIAS_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
+                                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
+                                    </svg>Report</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/DIAS_Presentation.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-collection-play" style="margin-right: 6px;">
+                                        <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path>
+                                        <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"></path>
+                                    </svg>Presentation</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" style="margin: 0px 0px 16px;">
-                <div class="card-body">
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-auto d-grid align-self-end">
-                            <h4 class="d-grid">Electoral Redistricting of Ireland</h4>
+                <div class="card" data-aos="fade-up" style="margin: 0px 0px 16px;">
+                    <div class="card-body">
+                        <div class="row g-0 justify-content-between">
+                            <div class="col-auto d-grid align-self-end">
+                                <h4 class="d-grid">Electoral Redistricting of Ireland</h4>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">May 2023</h5>
+                            </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">May 2023</h5>
+                        <h6 class="text-muted card-subtitle mb-2">Real-World Mathematical Modelling Event | Trinity College Dublin</h6>
+                        <ul>
+                            <li>In May 2023, I participated in a three-day Mathematical Modelling Hackathon in Trinity College Dublin, in a group with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>, Ben McGloin and Mikey Whelan.</li>
+                            <li>We developed an evolutionary algorithm in Python designed to optimise the constituency boundaries of Ireland according to the criteria outlined in the Irish Constitution.</li>
+                        </ul>
+                        <div class="row gx-2 gy-2 row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-xl-3 justify-content-evenly align-items-center photos" data-bss-baguettebox="" style="margin-top: -18px;">
+                            <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/f_cb.png" alt="3D plot of reward function"></div>
+                            <div class="col-xxl-4 item"><img class="img-fluid d-none d-sm-block" src="assets/img/graph.png" alt="Graphical representation of electoral districts"></div>
+                            <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/current_configuration.jpg" alt="Map of Ireland coloured by constituency, overlaid with county boundaries"></div>
                         </div>
-                    </div>
-                    <h6 class="text-muted card-subtitle mb-2">Real-World Mathematical Modelling Event | Trinity College Dublin</h6>
-                    <ul>
-                        <li>In May 2023, I participated in a three-day Mathematical Modelling Hackathon in Trinity College Dublin, in a group with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>, Ben McGloin and Mikey Whelan.</li>
-                        <li>We developed an evolutionary algorithm in Python designed to optimise the constituency boundaries of Ireland according to the criteria outlined in the Irish Constitution.</li>
-                    </ul>
-                    <div class="row gx-2 gy-2 row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-xl-3 justify-content-evenly align-items-center photos" data-bss-baguettebox="" style="margin-top: -18px;">
-                        <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/f_cb.png" alt="3D plot of reward function"></div>
-                        <div class="col-xxl-4 item"><img class="img-fluid d-none d-sm-block" src="assets/img/graph.png" alt="Graphical representation of electoral districts"></div>
-                        <div class="col-xxl-4 item"><img class="img-fluid" src="assets/img/current_configuration.jpg" alt="Map of Ireland coloured by constituency, overlaid with county boundaries"></div>
-                    </div>
-                    <p class="fw-normal text-secondary lh-sm d-lg-flex justify-content-lg-end" style="font-size: 12px;padding-bottom: 5px;"><em>Plotted using the Python packages&nbsp;</em><a class="text-decoration-none lh-sm" href="https://matplotlib.org"><em>matplotlib</em></a><em>&nbsp;and&nbsp;</em><a class="text-decoration-none lh-sm" href="https://geopandas.org/en/stable/"><em>GeoPandas</em></a>.</p>
-                    <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Redistricting_Ireland_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
-                                </svg>Report</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://github.com/elizasomerville/IrishConstituencyOptimisation"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="margin-right: 6px;">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
-                                </svg>GitHub Repository</a></div>
+                        <p class="fw-normal text-secondary lh-sm d-lg-flex justify-content-lg-end" style="font-size: 12px;padding-bottom: 5px;"><em>Plotted using the Python packages&nbsp;</em><a class="text-decoration-none lh-sm" href="https://matplotlib.org"><em>matplotlib</em></a><em>&nbsp;and&nbsp;</em><a class="text-decoration-none lh-sm" href="https://geopandas.org/en/stable/"><em>GeoPandas</em></a>.</p>
+                        <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Redistricting_Ireland_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
+                                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
+                                    </svg>Report</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://github.com/elizasomerville/IrishConstituencyOptimisation"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="margin-right: 6px;">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                                    </svg>GitHub Repository</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" style="margin-bottom: 16px;">
-                <div class="card-body">
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-auto d-grid">
-                            <h4 class="d-grid">Solitons in 1+1 Dimensions</h4>
+                <div class="card" data-aos="fade-up" style="margin-bottom: 16px;">
+                    <div class="card-body">
+                        <div class="row g-0 justify-content-between">
+                            <div class="col-auto d-grid">
+                                <h4 class="d-grid">Solitons in 1+1 Dimensions</h4>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Nov 2023</h5>
+                            </div>
                         </div>
-                        <div class="col-auto d-none d-md-block">
-                            <h5 class="text-end text-secondary d-grid d-xl-flex justify-content-start align-self-center justify-content-xl-end justify-content-xxl-end mb-2">Nov 2023</h5>
+                        <h6 class="text-muted card-subtitle mb-2">Independent Project</h6>
+                        <ul>
+                            <li>A project in collaboration with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>.</li>
+                            <li>We generated animations of soliton dynamics in Mathematica, and produced an accompanying report outlining the basic theory of solitons in one spatial dimension.</li>
+                        </ul>
+                        <div class="row gx-2 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 justify-content-between photos" data-bss-baguettebox="">
+                            <div class="col flex-fill item"><img class="img-fluid" src="assets/img/doublet.gif" alt="The doublet or breather mode"></div>
+                            <div class="col flex-fill item"><img class="img-fluid" src="assets/img/two_solitons.gif" alt="The interaction of two solitons"></div>
                         </div>
-                    </div>
-                    <h6 class="text-muted card-subtitle mb-2">Independent Project</h6>
-                    <ul>
-                        <li>A project in collaboration with&nbsp;<a class="text-decoration-none" href="https://farrenal.github.io">Alexander Farren</a>.</li>
-                        <li>We generated animations of soliton dynamics in Mathematica, and produced an accompanying report outlining the basic theory of solitons in one spatial dimension.</li>
-                    </ul>
-                    <div class="row gx-2 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 justify-content-between photos" data-bss-baguettebox="">
-                        <div class="col flex-fill item"><img class="img-fluid" src="assets/img/doublet.gif" alt="The doublet or breather mode"></div>
-                        <div class="col flex-fill item"><img class="img-fluid" src="assets/img/two_solitons.gif" alt="The interaction of two solitons"></div>
-                    </div>
-                    <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Solitons_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
-                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
-                                </svg>Report</a></div>
-                        <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://farrenal.github.io/Solitons/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-globe-americas" style="margin-right: 6px;">
-                                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"></path>
-                                </svg>Webpage</a></div>
+                        <div class="row gy-1 row-cols-1 row-cols-sm-1 row-cols-md-2 d-flex justify-content-center align-items-center" style="margin-bottom: -5px;margin-top: 0px;">
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://elizasomerville.github.io/Files/Solitons_Report.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-earmark-pdf d-inline-flex align-items-center" style="margin-right: 4px;">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
+                                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"></path>
+                                    </svg>Report</a></div>
+                            <div class="col d-grid" style="margin-bottom: 4px;"><a class="btn btn-light link-primary border rounded-pill d-inline-flex justify-content-center align-items-center" role="button" style="margin-bottom: 0px;margin-top: 0px;" href="https://farrenal.github.io/Solitons/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-globe-americas" style="margin-right: 6px;">
+                                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"></path>
+                                    </svg>Webpage</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,6 +273,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
