@@ -13,11 +13,12 @@
 }
 
 h1 {
-  background: linear-gradient(90deg, var(--bs-purple), var(--bs-cyan),var(--bs-purple));
+  background: linear-gradient(90deg, var(--bs-purple) 0%, var(--bs-cyan) 25%, var(--bs-purple) 50%, var(--bs-cyan) 75%, var(--bs-purple) 100%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animatedTextGradient 10s linear infinite;
+  animation: animatedTextGradient 15s linear infinite;
+  animation-delay: -8s;
 }
 
 @keyframes animatedTextGradient {
